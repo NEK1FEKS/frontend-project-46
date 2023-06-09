@@ -10,7 +10,7 @@
   "author": "NEK1FEKS",
   "license": "ISC",
   "bin": {
-    "gendiff": "bin/brain-gendiff.js"
+    "gendiff": "bin/gendiff.js"
   },
   "dependencies": {
     "commander": "^10.0.1",
