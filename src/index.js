@@ -14,7 +14,6 @@ const genDiff = (filePath1, filePath2) => {
     }
     return acc;
   }, {});
-
   return JSON.stringify(difference, null, ' ').replace(/"/gi, '').replace(/,/gi, '');
 };
 
