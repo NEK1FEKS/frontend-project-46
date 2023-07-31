@@ -1,9 +1,10 @@
-import { readFileSync } from 'fs';
+import { read, readFileSync } from 'fs';
 import path from 'path';
 import process from 'process';
 
 export default (filepath) => {
   const absolutePath = path.resolve(process.cwd(), filepath);
   const readFile = readFileSync(absolutePath, 'utf-8');
-  return JSON.parse(readFile);
+  return readFile;
+  //return JSON.parse(readFile);
 };
