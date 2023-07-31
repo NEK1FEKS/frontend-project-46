@@ -9,3 +9,6 @@
 
 Comparison of flat files (JSON):
 [![asciicast](https://asciinema.org/a/591928.svg)](https://asciinema.org/a/591928)
+
+Comparison of flat files (yaml and JSON)
+[![asciicast](https://asciinema.org/a/599944.svg)](https://asciinema.org/a/599944)
