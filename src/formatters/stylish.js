@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const stylish = (tree) => {
+const stylishFormat = (tree) => {
   const spacesCount = 4;
 
   const getSpace = (depth) => ' '.repeat(depth * spacesCount - 2);
@@ -47,4 +47,4 @@ const stylish = (tree) => {
   return iter(tree, 1);
 };
 
-export default stylish;
+export default stylishFormat;
