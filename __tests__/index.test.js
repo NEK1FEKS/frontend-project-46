@@ -12,7 +12,7 @@ const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
 const files = [['file1.json', 'file2.json'], ['file1.yaml', 'file2.yaml'], ['file1.yml', 'file2.yml']];
 
-test.each(files)('genDiff with default format', (file1, file2) => {
+test.each(files)('genDiff with default (stylish) format', (file1, file2) => {
   const filepath1 = getFixturePath(file1);
   const filepath2 = getFixturePath(file2);
   const expected = readFile('stylishExpect.txt');
