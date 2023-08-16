@@ -12,7 +12,7 @@ const stylishFormat = (tree) => {
     }
     const entries = Object.entries(data);
     const lines = entries.map(([key, value]) => `${getSpace(depth)}  ${key}: ${stringify(value, depth + 1)}`);
-  
+
     return ['{', ...lines, `${getSpaceBack(depth)}}`].join('\n');
   };
 
