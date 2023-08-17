@@ -5,7 +5,7 @@ import buildTree from './buildTree.js';
 import formatter from './formatters/index.js';
 
 const getData = (filePath) => {
-  const extname = path.extname(filePath);
+  const extname = path.extname(filePath).slice(1);
   const data = parse(readFile(filePath), extname);
   return data;
 };
